@@ -1,16 +1,16 @@
 /**
  * Zoom Deleter - Deletes zoom and prevents you from reinstalling it.
  * Copyright (c) 2021 Anar Software LLC. < http://anars.com >
- * <p>
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 3 of the License, or (at your option) any later
  * version.
- * <p>
+ *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
- * <p>
+ *
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see < http://www.gnu.org/licenses/ >
  */
@@ -42,7 +42,7 @@ public class ZoomDeleter {
         System.out.println("Zoom Deleter v" + VERSION + " - Deletes zoom and prevents you from reinstalling it.");
         System.out.println("Copyright (c) 2021 Anar Software LLC. < http://anars.com >\n");
         if (System.getProperty("os.name").equalsIgnoreCase("Mac OS X"))
-            new ZoomDeleter(Paths.get("/Users/kay/Downloads/"), new String[]{"zoom.us.app", "zoom.app", "Zoom Rooms.app"}).processEvents();
+            new ZoomDeleter(Paths.get("/Applications/"), new String[]{"zoom.us.app", "zoom.app", "Zoom Rooms.app"}).processEvents();
         else
             System.out.println("Error : Unsupported operating system.");
     }
